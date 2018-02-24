@@ -1,0 +1,7 @@
+; Pintar los cuatro primeros píxeles de pantalla de un color.
+; Empieza en la dirección 4000
+; FF -> Rojo; 00 -> Azul; F0 -> Amarillo; 0F -> Cyan
+
+LD A, #FF            ; 3E FF
+LD (#C000), A        ; 32 00 C0
+JR #FE               ; 18 FE

@@ -1,0 +1,7 @@
+## Pintar el primer píxel de pantalla de cada color.
+## Empieza en la dirección 4000
+## 88 -> Rojo; 00 -> Azul; 80 -> Amarillo; 08 -> Cyan
+
+LD A, #88       ## 3E 88
+LD (#C000), A   ## 32 00 C0
+JR #FE          ## 18 FE
